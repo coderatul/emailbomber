@@ -1,5 +1,6 @@
-# Email-bomber-in-python
-- A Powerful Python Script To Send Bulk Mails
+<h1 align="center">Email-Bomber v1.0</h1>
+<p align="center">An open-source Email-Bomber.</p><br>
+
 ![ss main git commit mail bomb](https://user-images.githubusercontent.com/72141859/116877627-308b5000-abec-11eb-9595-a1c8d6ee4b0f.png)
 # About Module -
 - smtp library 
@@ -7,11 +8,21 @@
 # Usage
 - For Termux
 ```
-$ pkg install git
-$ pkg install python
-$ git clone github.com/coderatul/email_bomber_script_in_python_by_coderatul
-$ cd email_bomber_script_in_python_by_coderatul
-$ python email_bomber_python_coderatul.py
+pkg install git
 ```
-# contact
-- linktr.ee/programmeratul
+```
+pkg install python
+```
+```
+git clone https://github.com/coderatul/email_bomber_script_in_python_by_coderatul
+```
+```
+ls
+```
+```
+cd email_bomber_script_in_python_by_coderatul
+```
+```
+python email_bomber_python_coderatul.py
+```
+## Contact <a href="https://linktr.ee/programmeratul"> click here</a>
