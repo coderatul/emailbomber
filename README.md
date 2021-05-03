@@ -1,5 +1,5 @@
-<h1 align="center">Email-Bomber v1.0</h1>
-<p align="center">An open-source Email-Bomber.</p><br>
+# Email-Bomber v1.0
+- An open Source free to use email-bomber using smtp
 
 ![ss main git commit mail bomb](https://user-images.githubusercontent.com/72141859/116877627-308b5000-abec-11eb-9595-a1c8d6ee4b0f.png)
 # About Module -
