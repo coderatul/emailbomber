@@ -11,7 +11,7 @@ $ pkg install git
 $ pkg install python
 $ git clone github.com/coderatul/email_bomber_script_in_python_by_coderatul
 $ cd email_bomber_script_in_python_by_coderatul
-$ python email_bomber_script_in_python_by_coderatul.py
+$ python email_bomber_python_coderatul.py
 ```
 # contact
 - linktr.ee/programmeratul
