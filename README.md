@@ -28,7 +28,7 @@ cd email_bomber_script_in_python_by_coderatul
 sudo apt install git
 ```
 ```
-sudo apt install python
+sudo apt install python3.8
 ```
 ```
 sudo apt update && upgrade 
@@ -40,7 +40,7 @@ git clone https://github.com/coderatul/email_bomber_script_in_python_by_coderatu
 cd email_bomber_script_in_python_by_coderatul
 ```
 ```
-python email_bomber_python_coderatul.py
+python3.8 email_bomber_python_coderatul.py
 ```
 
 
