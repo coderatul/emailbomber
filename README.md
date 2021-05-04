@@ -22,7 +22,26 @@ ls
 ```
 cd email_bomber_script_in_python_by_coderatul
 ```
+
+- For linux distributions
+```
+sudo apt install git
+```
+```
+sudo apt install python
+```
+```
+sudo apt update && upgrade 
+```
+```
+git clone https://github.com/coderatul/email_bomber_script_in_python_by_coderatul
+```
+```
+cd email_bomber_script_in_python_by_coderatul
+```
 ```
 python email_bomber_python_coderatul.py
 ```
+
+
 ## Contact <a href="https://linktr.ee/programmeratul"> click here</a>
