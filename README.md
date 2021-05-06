@@ -22,6 +22,9 @@ ls
 ```
 cd email_bomber_script_in_python_by_coderatul
 ```
+```
+python email_bomber_python_coderatul.py
+```
 
 - For linux distributions
 ```
