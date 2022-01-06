@@ -14,13 +14,13 @@ pkg install git
 pkg install python
 ```
 ```
-git clone https://github.com/coderatul/email_bomber_script_in_python_by_coderatul
+git clone https://github.com/coderatul/emailbomber
 ```
 ```
 ls
 ```
 ```
-cd email_bomber_script_in_python_by_coderatul
+cd emailbomber
 ```
 ```
 python email_bomber_python_coderatul.py
@@ -37,10 +37,10 @@ sudo apt install python3.8
 sudo apt update && upgrade 
 ```
 ```
-git clone https://github.com/coderatul/email_bomber_script_in_python_by_coderatul
+git clone https://github.com/coderatul/emailbomber
 ```
 ```
-cd email_bomber_script_in_python_by_coderatul
+cd emailbomber
 ```
 ```
 python3.8 email_bomber_python_coderatul.py
