@@ -1,78 +1,46 @@
-print(' _________________________________ ')
-print('< Email-Bomber Author : coderatul >')
-print(' --------------------------------- ')
-print('        \   ^__^                   ')
-print('         \  (oo)\_______           ')
-print('            (__)\       )\/\       ')
-print('                ||----w |          ')
-print('                ||     ||          ')
-# we could used multiline strip but it was not preserving cowsay
-print()
-print('''                    source code available at : linktr.ee/programmeratul                ''')
-print( '''                                     email bomber v1.0                                 ''')
-print('''                                       !!!!ALERT !!!!
-                    Before using this script enable less secure app acess 
-                                    from senders gmail account 
-                    you can go here : myaccount.google.com/lesssecureapps
-                             !!! ONLY FOR EDUCATIONAL PURPOSE !!!
-      ''')
-print('Author : coderatul')
-print('Author is not responsible for any kind of unethical act performed using this script')
-print('Visit smtplib documentation to know more about this project : https://docs.python.org/3/library/smtplib.html')
-print('Initialising program ..........')
-num_count = 0
-#importing simple Mail Transfer Protocol(smtp) module
+print(
+"""
+███████╗███╗   ███╗ █████╗ ██╗██╗     ██████╗  ██████╗ ███╗   ███╗██████╗ ███████╗██████╗ 
+██╔════╝████╗ ████║██╔══██╗██║██║     ██╔══██╗██╔═══██╗████╗ ████║██╔══██╗██╔════╝██╔══██╗
+█████╗  ██╔████╔██║███████║██║██║     ██████╔╝██║   ██║██╔████╔██║██████╔╝█████╗  ██████╔╝
+██╔══╝  ██║╚██╔╝██║██╔══██║██║██║     ██╔══██╗██║   ██║██║╚██╔╝██║██╔══██╗██╔══╝  ██╔══██╗
+███████╗██║ ╚═╝ ██║██║  ██║██║███████╗██████╔╝╚██████╔╝██║ ╚═╝ ██║██████╔╝███████╗██║  ██║
+╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+            version 1.1 : uses app passowrd now, before it used less secure apps
+                               Author : linktr.ee/coderatul
+                        Before using please read "prerequisite section"
+"""
+)
+from cgitb import text
+from email import message
+from typing import Text
+from getpass4 import getpass
+sender = input("Enetr Sender's Gmail Id -> ")
+app_password = getpass("Enter App password -> ")
+receiver = input("Enter Receiver's Gmail Id -> ")
+message = input("Enter Your Message ->")
+count = int(input("Enter number of mail's to be sent -> "))
 import smtplib 
-#getting number of mail's to be sent
+server = smtplib.SMTP("smtp.gmail.com",587)
+server.starttls()
 try:
-    nos = int(input("Enter the number of Mails to be sent : "))
+    server.login(user= sender,password= app_password)
 except:
-    print("Please enter a valid character(only number!)")
-#printing number of mails to be sent 
-print("Number of mail's to be sent is",nos)
-#getting sender's gmail ID from end user 
-sender_email = input("Enter you gmail/sender's ID : ")
-#printing sender's gmail ID 
-print("Sender's gmail ID is : ",sender_email)
-#inputing password for login into smtp server
-password = input("Please enter your password : ")
-#printing password entered by the end user
-print("Sender's gmail ID password is : ",password)
-#inputing receivers gamil ID 
-rec_email = input("Enter receiver's gmail id :")
-#printing receiver's gmail ID 
-print("Receiver's gmail Id is : ",rec_email)
-#inputing message from the end user 
-message = input("Enter your message:")
-#printing message to be sent 
-print('Message to be sent is :',message)
-#using for loop for sending desired nos of mails
-#using try to check whether info given is correct or not and if not the printing solution
-print('Login successfuly !!!')
-print('encrytping traffic.....')
-try:
-    for i in range(nos):
-         #defining email service and port (search smtp port for gmail on google)
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        # starting TLS (TLS protects the transmission of the content of email messages)
-        server.starttls()
-        #login
-        server.login(sender_email, password)
-        #sending mail finally !!!
-        server.sendmail(sender_email, rec_email, message)
-        num_count+= 1
-        print(num_count,"mail sent")
-        if nos == num_count:
-            print(nos,'mails have been sent to',rec_email)
-            print('!!!script ended !!!')
-        print('This script is powerful use wisely!!!')
-except:
-    print('''        {{{script Ended}}}
-1. The info you entered is incorrect
-solution : re - run script and enter info carefully
-2. If issue not resolved switch on this :
-myaccount.google.com/lesssecureapps
-disable 2FA if enabled''')
-             
+    print("")
+    print("""check for the following:
+    1. Read prerequisite section 
+    2. Check app password
+    3. try again and enter details carefully
+    """)
+else:
+    for i in range(count):
+        server.sendmail(from_addr= sender,to_addrs= receiver,msg= message)
+    if count < 2:
+        print(count,"mail have been sent to :",receiver)
+    else:
+        print(count,"mails have been sent to :",receiver)
+    server.close()
+
+
 
 
