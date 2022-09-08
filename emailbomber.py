@@ -11,14 +11,10 @@ print(
                         Before using please read "prerequisite section"
 """
 )
-from cgitb import text
-from email import message
-from typing import Text
-from getpass4 import getpass
 sender = input("Enetr Sender's Gmail Id -> ")
-app_password = getpass("Enter App password -> ")
+app_password = input("Enter App password -> ")
 receiver = input("Enter Receiver's Gmail Id -> ")
-message = input("Enter Your Message ->")
+message = input("Enter Your Message -> ")
 count = int(input("Enter number of mail's to be sent -> "))
 import smtplib 
 server = smtplib.SMTP("smtp.gmail.com",587)
@@ -40,7 +36,3 @@ else:
     else:
         print(count,"mails have been sent to :",receiver)
     server.close()
-
-
-
-
