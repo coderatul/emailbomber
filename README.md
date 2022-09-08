@@ -51,7 +51,7 @@ ls
 cd emailbomber
 ```
 ```
-python email_bomber_python_coderatul.py
+python emailbomber.py
 ```
 
 # For linux distributions
@@ -71,5 +71,5 @@ git clone https://github.com/coderatul/emailbomber
 cd emailbomber
 ```
 ```
-python3.8 email_bomber_python_coderatul.py
+python3.8 emailbomber.py
 ```
