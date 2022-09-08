@@ -71,5 +71,5 @@ git clone https://github.com/coderatul/emailbomber
 cd emailbomber
 ```
 ```
-python3.8 emailbomber.py
+python emailbomber.py
 ```
