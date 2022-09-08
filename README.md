@@ -7,10 +7,7 @@
 
 # Modules Required 📗
 - <a href="https://docs.python.org/3/library/smtplib.html"> SMTP</a> is a library used for sending mails in python which stands for simple mail transfer protocol
-- <a href="https://pypi.org/project/getpass4/"> getpass4</a> is a library used to hide input text (while inputting password)
-```
-pip install getpass4
-```
+
 #  Prerequisite ⚙️
 ## Create & use App Passwords
 
@@ -29,7 +26,7 @@ pip install getpass4
   device (windows computer here) and choose the device you’re using(windows computer here) and then Generate.
   
   ![app pass](https://user-images.githubusercontent.com/72141859/189069975-1898d162-e3a9-4cab-b1a0-c95963e65268.png)  
-- copy the Appassword and while entering sender's password in the script use this password instead of your gmail accounts password 
+- copy the App password and while entering sender's password in the script use this password instead of your gmail accounts password 
 
   ![app paaas](https://user-images.githubusercontent.com/72141859/189070691-8a5734a7-9272-493a-b9b1-4997d90d8deb.png)
 
