@@ -1,12 +1,40 @@
-# Email-Bomber v1.0
+# Email-Bomber v1.1 📧
 - An open Source free to use email-bomber using smtp
+- Script Have been updated to google's latest requirements as less secure feature have been disable by Google
+- Now we use something known as app password 
 
-![ss main git commit mail bomb](https://user-images.githubusercontent.com/72141859/116877627-308b5000-abec-11eb-9595-a1c8d6ee4b0f.png)
-# About Module -
-- smtp library 
-- Stands for "Simple Mail Transfer Protocol." This is the protocol used for sending e-mail over the Internet. Your e-mail client (such as Outlook, Eudora, or Mac OS X Mail) uses SMTP to send a message to the mail server, and the mail server uses SMTP to relay that message to the correct receiving mail server.
-# Usage
-- For Termux
+![eg](https://user-images.githubusercontent.com/72141859/189071701-9adbfbd6-bfe8-4f79-a7bd-71a7f4005ad5.png)
+
+# Modules Required 📗
+- <a href="https://docs.python.org/3/library/smtplib.html"> SMTP</a> is a library used for sending mails in python which stands for simple mail transfer protocol
+- <a href="https://pypi.org/project/getpass4/"> getpass4</a> is a library used to hide input text (while inputting password)
+```
+pip install getpass4
+```
+#  Prerequisite ⚙️
+## Create & use App Passwords
+
+- Go to your Google Account (from which you would send mail).
+- Select Security.
+
+- Enable 2FA for your Account.
+
+- Under "Signing in to Google," select App Passwords. You may need to sign in. If you don’t have this option, it might be because :
+  -  2-Step Verification is not set up for your account.
+  - 2-Step Verification is only set up for security keys.
+  - Your account is through work, school, or other organization.
+  - You turned on Advanced Protection.
+
+- At the bottom, choose Select app (gmail here) and choose the app you using (gmail here) and then select
+  device (windows computer here) and choose the device you’re using(windows computer here) and then Generate.
+  
+  ![app pass](https://user-images.githubusercontent.com/72141859/189069975-1898d162-e3a9-4cab-b1a0-c95963e65268.png)  
+- copy the Appassword and while entering sender's password in the script use this password instead of your gmail accounts password 
+
+  ![app paaas](https://user-images.githubusercontent.com/72141859/189070691-8a5734a7-9272-493a-b9b1-4997d90d8deb.png)
+
+
+# For Termux
 ```
 pkg install git
 ```
@@ -26,7 +54,7 @@ cd emailbomber
 python email_bomber_python_coderatul.py
 ```
 
-- For linux distributions
+# For linux distributions
 ```
 sudo apt install git
 ```
@@ -45,6 +73,3 @@ cd emailbomber
 ```
 python3.8 email_bomber_python_coderatul.py
 ```
-
-
-## Contact <a href="https://linktr.ee/programmeratul"> click here</a>
