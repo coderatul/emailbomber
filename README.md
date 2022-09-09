@@ -1,9 +1,9 @@
 # Email-Bomber v1.1 📧
 - An open Source free to use email-bomber using smtp
 - Script Have been updated to google's latest requirements as less secure feature have been disable by Google
-- Now we use something known as app password 
-
-![eg](https://user-images.githubusercontent.com/72141859/189071701-9adbfbd6-bfe8-4f79-a7bd-71a7f4005ad5.png)
+- Now we use something known as app password
+ 
+![emailbomber ss](https://user-images.githubusercontent.com/72141859/189279590-4dec4bc0-ed2e-4f79-8968-988b585fe279.png)
 
 # Modules Required 📗
 - <a href="https://docs.python.org/3/library/smtplib.html"> SMTP</a> is a library used for sending mails in python which stands for simple mail transfer protocol
