@@ -1,8 +1,8 @@
-#📧 Email-Bomber v2.0.0
+# 📧 Email-Bomber v2.0.0
 ![Email Bomber Screenshot v2.0.0](https://i.imgur.com/zSeyXbw.png)
 - An open Source free to use email-bomber using python's built-in library SMTP.
 
-##⚠️ Prerequisite
+## ⚠️ Prerequisite
 ![Enabling 2-Step Verification Screenshot](https://i.imgur.com/1tUNrsu.png)
 
 ### Enabling 2-Step Verification
@@ -26,7 +26,7 @@
 - Copy App Password.
 - Use App Password in Email-Bomber script.
 
-##📑 Installation Guide
+## 📑 Installation Guide
 ### Termux
 ```
 pkg install git
@@ -66,13 +66,13 @@ cd emailbomber
 python emailbomber.py
 ```
 
-#🧾 Requirements.txt
+# 🧾 Requirements.txt
 - [SMTP](https://docs.python.org/3/library/smtplib.html), which stands for Simple Mail Transfer Protocol, is a built-in Python module used to send e-mails in Python.
 
 
 - [OS](https://docs.python.org/3/library/os.html), which stands for Operating System, is a built-in Python module which provides a portable way of using operating system dependent functionality.
 
-##📇 License
+## 📇 License
 ```
 MIT License
 
@@ -97,8 +97,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-##🤵 Authors
+## 🤵 Authors
 - [@coderatul](https://github.com/coderatul)
 
-##❔ Questions/Feedback
+## ❔ Questions/Feedback
 If you have any questions or feedback, please reach out in [issues](https://github.com/coderatul/emailbomber/issues).
