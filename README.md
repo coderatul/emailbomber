@@ -1,37 +1,33 @@
-# Email-Bomber v1.1 📧
-- An open Source free to use email-bomber using smtp
-- Script Have been updated to google's latest requirements as less secure feature have been disable by Google
-- Now we use something known as app password
- 
-![emailbomber ss](https://user-images.githubusercontent.com/72141859/189279590-4dec4bc0-ed2e-4f79-8968-988b585fe279.png)
+#📧 Email-Bomber v2.0.0
+![Email Bomber Screenshot v2.0.0](https://i.imgur.com/zSeyXbw.png)
+- An open Source free to use email-bomber using python's built-in library SMTP.
 
-# Modules Required 📗
-- <a href="https://docs.python.org/3/library/smtplib.html"> SMTP</a> is a library used for sending mails in python which stands for simple mail transfer protocol
+##⚠️ Prerequisite
+![Enabling 2-Step Verification Screenshot](https://i.imgur.com/1tUNrsu.png)
 
-#  Prerequisite ⚙️
-## Create & use App Passwords
+### Enabling 2-Step Verification
+- Go to your [Google Account](https://myaccount.google.com/) which you would like to send email-bombs from.
+- Select [Security](https://myaccount.google.com/security).
+- Enable [2-Step Verification](https://myaccount.google.com/signinoptions/two-step-verification).
 
-- Go to your Google Account (from which you would send mail).
-- Select Security.
+### Create App Password
+![Create App Password Screenshot](https://i.imgur.com/KdU5Erp.png)
+- Go to [App Passwords](https://myaccount.google.com/apppasswords).
+- Select app as Mail.
+- Select device as your device e.g. Windows Computer etc.
+  - If you do not have this option available:
+    - You turned on Advanced Protection.
+    - 2-Step Verification is not set up for your account.
+    - 2-Step Verification is only set up for security keys.
+    - Your account is under the control by work, school, or an organization.
 
-- Enable 2FA for your Account.
+### Use App Password
+![App Password](https://i.imgur.com/krkn5EX.png)
+- Copy App Password.
+- Use App Password in Email-Bomber script.
 
-- Under "Signing in to Google," select App Passwords. You may need to sign in. If you don’t have this option, it might be because :
-  -  2-Step Verification is not set up for your account.
-  - 2-Step Verification is only set up for security keys.
-  - Your account is through work, school, or other organization.
-  - You turned on Advanced Protection.
-
-- At the bottom, choose Select app (gmail here) and choose the app you using (gmail here) and then select
-  device (windows computer here) and choose the device you’re using(windows computer here) and then Generate.
-  
-  ![app pass](https://user-images.githubusercontent.com/72141859/189069975-1898d162-e3a9-4cab-b1a0-c95963e65268.png)  
-- copy the App password and while entering sender's password in the script use this password instead of your gmail accounts password 
-
-  ![app paaas](https://user-images.githubusercontent.com/72141859/189070691-8a5734a7-9272-493a-b9b1-4997d90d8deb.png)
-
-
-# For Termux
+##📑 Installation Guide
+### Termux
 ```
 pkg install git
 ```
@@ -50,8 +46,7 @@ cd emailbomber
 ```
 python emailbomber.py
 ```
-
-# For linux distributions
+### Linux Distributions
 ```
 sudo apt install git
 ```
@@ -70,3 +65,40 @@ cd emailbomber
 ```
 python emailbomber.py
 ```
+
+#🧾 Requirements.txt
+- [SMTP](https://docs.python.org/3/library/smtplib.html), which stands for Simple Mail Transfer Protocol, is a built-in Python module used to send e-mails in Python.
+
+
+- [OS](https://docs.python.org/3/library/os.html), which stands for Operating System, is a built-in Python module which provides a portable way of using operating system dependent functionality.
+
+##📇 License
+```
+MIT License
+
+Copyright (c) 2022-Present, Atul Kushwaha.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+##🤵 Authors
+- [@coderatul](https://github.com/coderatul)
+
+##❔ Questions/Feedback
+If you have any questions or feedback, please reach out in [issues](https://github.com/coderatul/emailbomber/issues).
