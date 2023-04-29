@@ -1,6 +1,7 @@
 #Built-in library's.
 import smtplib
 from os import access, path, mkdir
+from email.message import EmailMessage
 
 print(f"{open('Welcome/welcome.txt', encoding='UTF-8').read()}\n\n") #Welcomes user.
 
@@ -14,7 +15,10 @@ else: #Otherwise, reads saved user credentials.
 
 print("If you would like to spam more than one email, separate the emails by commas (example@gmail.com, example2@hotmail.com, example3@myspace.com)") #Tells user how to email-bomb more than one email.
 receiver = input("Specify the email(s) you would like to email-bomb -> ") #Enter the email(s) that you would like to email-bomb.
-message = input("Enter your email-bomber message -> ") #The message that the email user(s) will receive.
+msg = input("Enter your email-bomber message -> ") #The message that the email user(s) will receive.
+message = EmailMessage()
+message.set_content(msg, subtype="plain", charset='us-ascii')
+message = str(message)
 
 # Loop until valid count value is given
 while(True):
