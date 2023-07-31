@@ -1,6 +1,14 @@
 # 📧 Email-Bomber v2.0.0
 ![Email Bomber Screenshot v2.0.0](https://i.imgur.com/zSeyXbw.png)
 - An open Source free to use email-bomber using python's built-in library SMTP.
+- This project's image is also available at dockerhub `docker pull coderatul/emailbomber`
+  - use following commands to use it on docker 🐋
+  - ```
+     docker run --rm -i -t emailbomber /bin/sh
+    ```
+  - ```
+    python3 emailbomber.py
+    ```
 
 ## ⚠️ Prerequisite
 ![Enabling 2-Step Verification Screenshot](https://i.imgur.com/1tUNrsu.png)
