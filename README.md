@@ -34,14 +34,6 @@
 - Copy App Password.
 - Use App Password in Email-Bomber script.
 
-### Setup App Password in Email-Bomber script
-![Folder Structure](./resources/images/folder-structure.jpg)
-- Create User_Credentials folder in Email-Bomber folder 
-- Replicate the folder structure
-- Paste App Password in app_password.txt
-- Paste sender's email in sender.txt 
-- You're good to go!!
-
 ## 📑 Installation Guide
 ### Termux
 ```
@@ -113,7 +105,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 🤵 Authors
+## ➕ Contributors
+<a href="https://github.com/coderatul/emailbomber/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=coderatul/emailbomber" />
+</a>
+
+## 🤵 Author
 - [@coderatul](https://github.com/coderatul)
 
 ## ❔ Questions/Feedback
