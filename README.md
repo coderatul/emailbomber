@@ -32,7 +32,7 @@
 ### Use App Password
 ![App Password](https://i.imgur.com/krkn5EX.png)
 - Copy App Password.
-- Use App Password in Email-Bomber script.
+- Use App Password in Email-Bomber script (you can input it safely into the prompt without it displaying to the console).
 
 ### Setup App Password in Email-Bomber script
 ![Folder Structure](./resources/images/folder-structure.jpg)
@@ -81,12 +81,6 @@ cd emailbomber
 ```
 python emailbomber.py
 ```
-
-# 🧾 Requirements.txt
-- [SMTP](https://docs.python.org/3/library/smtplib.html), which stands for Simple Mail Transfer Protocol, is a built-in Python module used to send e-mails in Python.
-
-
-- [OS](https://docs.python.org/3/library/os.html), which stands for Operating System, is a built-in Python module which provides a portable way of using operating system dependent functionality.
 
 ## 📇 License
 ```
