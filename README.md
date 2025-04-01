@@ -10,7 +10,10 @@
     python3 emailbomber.py
     ```
 ## GUI version 💻
-> checkout [GUI](https://github.com/coderatul/emailGUI.git) version of emailbomber 
+> checkout [GUI](https://github.com/coderatul/emailGUI.git) version of emailbomber
+
+![gui_emailbomber](https://github.com/user-attachments/assets/f9406245-cf9c-4b82-b525-60be1ba9079f)
+
 ## ⚠️ Prerequisite
 ![Enabling 2-Step Verification Screenshot](https://i.imgur.com/1tUNrsu.png)
 
