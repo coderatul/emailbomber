@@ -1,5 +1,6 @@
 # Built-in libraries
 import smtplib
+import getpass
 from os import access, path, mkdir
 from email.message import EmailMessage
 
@@ -10,7 +11,7 @@ print(f"{open('Welcome/welcome.txt', encoding='UTF-8').read()}\n\n")
 if not path.exists("User_Credentials"):
     # If User_Credentials does not exist, asks for user credentials
     sender = input("Enter the Gmail address you would like to send emails from (example@gmail.com) -> ")
-    app_password = input("Enter the app's password (xxxx xxxx xxxx xxxx) -> ")
+    app_password = getpass.getpass("Enter the app's password (xxxx xxxx xxxx xxxx) -> ")
 else:
     # Otherwise, reads saved user credentials
     sender = open("User_Credentials/sender.txt", "rt").read()
